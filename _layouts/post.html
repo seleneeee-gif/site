@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <style>
+        body { font-family: 'Georgia', serif; max-width: 750px; margin: 0 auto; padding: 30px; background-color: #fcfcfc; line-height: 1.6; }
+        .back-btn { text-decoration: none; color: #f5a623; font-weight: bold; font-family: sans-serif; }
+        .card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-top: 20px; }
+        h1 { color: #2c3e50; text-align: center; border-bottom: 2px solid #f1f1f1; padding-bottom: 20px; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 30px 0; }
+    </style>
+</head>
+<body>
+    <a href="{{ site.baseurl }}/" class="back-btn">← Ana Sayfaya Dön</a>
+    <div class="card">
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+    </div>
+</body>
+</html>
