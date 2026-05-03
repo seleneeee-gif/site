@@ -1,13 +1,7 @@
 title: My Sweet Articles
 description: A journey through art and flavors.
 
-# Linklerin birbirine girmemesi için
 baseurl: "/site"
 url: "https://seleneeee-gif.github.io"
 
-# Resmin görünmesi için dahil ediyoruz
-include:
-  - 1777838696064.png
-
-# Markdown ayarı
-markdown: kramdown
+include: [1777838696064.png]
