@@ -4,4 +4,5 @@ baseurl: ""
 url: "https://seleneeee-gif.github.io"
 include:
   - 1777838696064.png
+
 permalink: /:title.html
