@@ -6,12 +6,13 @@ layout: default
 <head>
     <style>
         body { 
-            /* RESİM ADINI BURADA GÜNCELLEDİM */
-            background-image: url('1777838696064.png'); 
+            /* Buradaki "{{ site.baseurl }}" kısmı resmin yerini GitHub'ın daha kolay bulmasını sağlar */
+            background-image: url('{{ site.baseurl }}/1777838696064.png'); 
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
+            background-color: #fdf5e6; /* Resim yüklenene kadar boş kalmasın diye eskitilmiş kağıt rengi */
             margin: 0;
             font-family: 'Georgia', serif;
             min-height: 100vh;
@@ -23,17 +24,18 @@ layout: default
             text-align: center; 
             margin-bottom: 70px; 
             padding: 40px;
-            background: rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.45);
             border-radius: 30px;
-            backdrop-filter: blur(8px); /* Arka planın o güzel detaylarını buğulu gösterir */
+            backdrop-filter: blur(10px); /* Arka plan detayları çok güzel olduğu için buğuyu biraz artırdım */
             border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         }
         .site-header h1 { font-size: 3.8em; color: #2c3e50; margin-bottom: 10px; font-weight: bold; }
         .site-header p { font-style: italic; color: #7f8c8d; font-size: 1.3em; }
         
         .post-list { list-style: none; padding: 0; }
         .post-card { 
-            background: rgba(255, 255, 255, 0.88); 
+            background: rgba(255, 255, 255, 0.9); 
             margin-bottom: 40px; 
             border-radius: 25px; 
             box-shadow: 0 10px 40px rgba(0,0,0,0.06); 
