@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | default: site.title }}</title>
   <style>
     body { 
       margin: 0; padding: 0;
-      background-image: url('{{ site.baseurl }}/1777838696064.png');
+      /* Resmi doğrudan klasörden çekmek için en güvenli yol */
+      background-image: url('1777838696064.png');
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
       font-family: 'Georgia', serif;
+      min-height: 100vh;
     }
   </style>
 </head>
