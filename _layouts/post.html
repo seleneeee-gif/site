@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-<div class="post-glass-container">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">📅 {{ page.date | date: "%d %B %Y" }} • <span class="cat">{{ page.category }}</span></p>
+<div class="post-glass-box">
+  <header class="post-header-section">
+    <h1 class="post-title-main">{{ page.title }}</h1>
+    <p class="post-meta-info">📅 {{ page.date | date: "%d %B %Y" }} • <span class="badge">{{ page.category }}</span></p>
   </header>
 
-  <div class="post-content">
+  <div class="post-article-content">
     {{ content }}
   </div>
 </div>
@@ -18,14 +18,13 @@ layout: default
     background-size: cover !important;
     background-attachment: fixed !important;
     background-position: center !important;
-    margin: 0;
   }
 
-  .post-glass-container {
+  .post-glass-box {
     max-width: 800px;
     margin: 40px auto;
     padding: 40px;
-    background: rgba(255, 255, 255, 0.88);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(15px);
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -33,16 +32,15 @@ layout: default
     font-family: 'Georgia', serif;
   }
 
-  .post-title { font-size: 2.5em; color: #4a3728; text-align: center; }
-  .post-meta { text-align: center; color: #8c7b70; font-style: italic; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
-  .cat { color: #d35400; font-weight: bold; text-transform: uppercase; }
+  .post-title-main { font-size: 2.5em; color: #4a3728; text-align: center; }
+  .post-meta-info { text-align: center; color: #8c7b70; font-style: italic; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+  .badge { color: #d35400; font-weight: bold; }
 
-  .post-content { line-height: 1.8; color: #2c3e50; font-size: 1.1em; text-align: justify; }
-  .post-content p { margin-bottom: 1.5em; }
+  .post-article-content { line-height: 1.8; color: #2c3e50; font-size: 1.1em; }
+  .post-article-content p { margin-bottom: 1.5em; }
   
-  .post-content img {
+  .post-article-content img {
     max-width: 100%;
-    height: auto;
     border-radius: 15px;
     display: block;
     margin: 20px auto;
