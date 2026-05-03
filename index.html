@@ -1,18 +1,22 @@
 ---
 layout: default
 ---
-<div style="max-width: 800px; margin: 0 auto; padding: 50px 20px;">
-  <div style="text-align: center; background: rgba(255,255,255,0.5); padding: 40px; border-radius: 20px; margin-bottom: 40px;">
-    <h1 style="color: #4a3728; margin: 0;">📜 My Sweet Articles</h1>
-  </div>
+<div style="max-width: 850px; margin: 0 auto; padding: 60px 20px;">
+  <header style="text-align: center; padding: 40px; background: rgba(255, 255, 255, 0.4); border-radius: 35px; backdrop-filter: blur(10px); margin-bottom: 60px; border: 1px solid rgba(255,255,255,0.2);">
+    <h1 style="font-size: 3em; color: #4a3728; margin: 0;">📜 My Sweet Articles</h1>
+    <p style="color: #6d5b4e; font-style: italic;">Art, History & Classic Flavors</p>
+  </header>
 
-  {% for post in site.posts %}
-  <div style="background: rgba(255,255,255,0.9); margin-bottom: 30px; border-radius: 15px; display: flex; overflow: hidden; height: 200px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
-    <img src="{{ post.thumbnail }}" style="width: 250px; object-fit: cover;">
-    <div style="padding: 25px; display: flex; flex-direction: column; justify-content: center;">
-      <a href="{{ post.url | relative_url }}" style="color: #2c3e50; text-decoration: none; font-size: 1.5em; font-weight: bold;">{{ post.title }}</a>
-      <p style="color: #666; margin-top: 10px;">{{ post.date | date: "%B %d, %Y" }}</p>
+  <div style="display: flex; flex-direction: column; gap: 40px;">
+    {% for post in site.posts %}
+    <div style="background: rgba(255, 255, 255, 0.92); border-radius: 20px; display: flex; overflow: hidden; height: 220px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+      <img src="{{ post.thumbnail }}" style="width: 280px; object-fit: cover;" onerror="this.src='https://via.placeholder.com/300x200?text=Resim+Yüklenemedi'">
+      <div style="padding: 30px; display: flex; flex-direction: column; justify-content: center; flex-grow: 1;">
+        <span style="font-size: 0.7em; font-weight: bold; color: #d35400; text-transform: uppercase; margin-bottom: 5px;">{{ post.category }}</span>
+        <a href="{{ post.url | relative_url }}" style="color: #2c3e50; text-decoration: none; font-size: 1.6em; font-weight: bold;">{{ post.title }}</a>
+        <p style="color: #888; font-size: 0.9em; margin-top: 10px;">{{ post.date | date: "%B %d, %Y" }}</p>
+      </div>
     </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
