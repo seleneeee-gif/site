@@ -1,20 +1,22 @@
 ---
 layout: default
 ---
-<div style="max-width: 850px; margin: 0 auto; padding: 60px 20px;">
-  <header style="text-align: center; padding: 40px; background: rgba(255, 255, 255, 0.4); border-radius: 35px; backdrop-filter: blur(10px); margin-bottom: 60px; border: 1px solid rgba(255,255,255,0.2);">
-    <h1 style="font-size: 3em; color: #4a3728; margin: 0;">📜 My Sweet Articles</h1>
-    <p style="color: #6d5b4e; font-style: italic;">Art, History & Classic Flavors</p>
+<div style="max-width: 850px; margin: 0 auto; padding: 50px 20px;">
+  <header style="text-align: center; padding: 45px; background: rgba(255, 255, 255, 0.45); border-radius: 35px; backdrop-filter: blur(12px); margin-bottom: 50px; border: 1px solid rgba(255,255,255,0.25);">
+    <h1 style="font-size: 3.2em; color: #4a3728; margin: 0;">📜 My Sweet Articles</h1>
+    <p style="color: #6d5b4e; font-style: italic; font-size: 1.2em;">Art, History & Classic Flavors</p>
   </header>
 
   <div style="display: flex; flex-direction: column; gap: 40px;">
     {% for post in site.posts %}
-    <div style="background: rgba(255, 255, 255, 0.92); border-radius: 20px; display: flex; overflow: hidden; height: 220px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-      <img src="{{ post.thumbnail }}" style="width: 280px; object-fit: cover;" onerror="this.src='https://via.placeholder.com/300x200?text=Resim+Yüklenemedi'">
+    <div style="background: rgba(255, 255, 255, 0.95); border-radius: 25px; display: flex; overflow: hidden; height: 230px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.5);">
+      <img src="{{ post.thumbnail }}" style="width: 300px; object-fit: cover;" onerror="this.src='https://via.placeholder.com/300x200?text=Image+Not+Found'">
       <div style="padding: 30px; display: flex; flex-direction: column; justify-content: center; flex-grow: 1;">
-        <span style="font-size: 0.7em; font-weight: bold; color: #d35400; text-transform: uppercase; margin-bottom: 5px;">{{ post.category }}</span>
-        <a href="{{ post.url | relative_url }}" style="color: #2c3e50; text-decoration: none; font-size: 1.6em; font-weight: bold;">{{ post.title }}</a>
-        <p style="color: #888; font-size: 0.9em; margin-top: 10px;">{{ post.date | date: "%B %d, %Y" }}</p>
+        <span style="font-size: 0.75em; font-weight: bold; color: #d35400; text-transform: uppercase; margin-bottom: 10px;">{{ post.category }}</span>
+        
+        <a href="{{ site.baseurl }}{{ post.url }}" style="color: #2c3e50; text-decoration: none; font-size: 1.8em; font-weight: bold; line-height: 1.2;">{{ post.title }}</a>
+        
+        <p style="color: #888; font-size: 0.95em; margin-top: 15px;">{{ post.date | date: "%B %d, %Y" }}</p>
       </div>
     </div>
     {% endfor %}
