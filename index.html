@@ -4,93 +4,118 @@ layout: default
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body { 
-            /* Arka plan resmini en güvenli şekilde tanımlıyoruz */
-            background-image: url('1777838696064.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-color: #fdf5e6; 
-            margin: 0;
-            font-family: 'Georgia', serif;
-            min-height: 100vh;
-        }
+<style>
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    min-height: 100vh;
+    background-color: #fdf5e6;
+    /* Resim yolu hatasını önlemek için doğrudan ismi kullanıyoruz */
+    background-image: url('1777838696064.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 
-        .page-container { max-width: 950px; margin: 0 auto; padding: 40px 20px; position: relative; z-index: 1; }
-        
-        .site-header { 
-            text-align: center; 
-            margin-bottom: 70px; 
-            padding: 50px;
-            background: rgba(255, 255, 255, 0.5); /* Biraz daha şeffaf yaptık ki Mona Lisa görünsün */
-            border-radius: 30px;
-            backdrop-filter: blur(8px); 
-            border: 1px solid rgba(255,255,255,0.3);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-        .site-header h1 { font-size: 3.8em; color: #4a3728; margin-bottom: 10px; font-weight: bold; }
-        .site-header p { font-style: italic; color: #6d5b4e; font-size: 1.3em; }
-        
-        .post-list { list-style: none; padding: 0; }
-        .post-card { 
-            background: rgba(255, 255, 255, 0.92); 
-            margin-bottom: 40px; 
-            border-radius: 25px; 
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08); 
-            display: flex; 
-            overflow: hidden; 
-            height: 280px;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            transition: 0.3s ease;
-        }
-        .post-card:hover { transform: translateY(-8px); box-shadow: 0 15px 50px rgba(0,0,0,0.15); }
+.page-container { 
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 60px 20px; 
+    position: relative; 
+    z-index: 1; 
+}
 
-        .post-thumbnail { 
-            width: 320px; height: 100%; object-fit: cover; flex-shrink: 0;
-            border-right: 1px solid #f1e4d1;
-        }
+.site-header { 
+    text-align: center; 
+    margin-bottom: 60px; 
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
 
-        .post-content { padding: 40px; display: flex; flex-direction: column; justify-content: center; flex-grow: 1; }
-        
-        .category-tag { 
-            display: inline-block; padding: 8px 16px; border-radius: 20px; 
-            font-size: 0.75em; text-transform: uppercase; font-weight: bold; margin-bottom: 15px;
-        }
-        .tag-art { background: #f4ecf7; color: #8e44ad; border: 1px solid #dcd0e0; }
-        .tag-recipe { background: #fff5e6; color: #d35400; border: 1px solid #f7e6cc; }
+.site-header h1 { font-size: 3.5em; color: #4a3728; margin: 0; font-weight: bold; }
+.site-header p { font-style: italic; color: #6d5b4e; margin-top: 10px; font-size: 1.2em; }
 
-        .post-link { color: #2c3e50; text-decoration: none; font-size: 1.8em; font-weight: bold; line-height: 1.2; }
-        .post-link:hover { color: #d35400; }
-        .post-date { color: #999; margin-top: 15px; font-style: italic; font-size: 0.9em; }
-    </style>
+.post-list { list-style: none; padding: 0; }
+
+.post-card { 
+    background: rgba(255, 255, 255, 0.92); 
+    margin-bottom: 40px; 
+    border-radius: 25px; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08); 
+    display: flex; 
+    overflow: hidden; 
+    height: 250px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover { transform: translateY(-10px); }
+
+.post-thumbnail { 
+    width: 300px; 
+    height: 100%; 
+    object-fit: cover; 
+    border-right: 1px solid #eee;
+}
+
+.post-content { 
+    padding: 30px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+.category-tag { 
+    display: inline-block; 
+    padding: 5px 15px; 
+    border-radius: 20px; 
+    font-size: 0.7em; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    margin-bottom: 10px;
+}
+
+.tag-art { background: #f4ecf7; color: #8e44ad; }
+.tag-recipe { background: #fff5e6; color: #d35400; }
+
+.post-link { 
+    color: #2c3e50; 
+    text-decoration: none; 
+    font-size: 1.7em; 
+    font-weight: bold; 
+    line-height: 1.2; 
+}
+
+.post-date { color: #999; margin-top: 10px; font-style: italic; }
+</style>
 </head>
 <body>
     <div class="page-container">
-        <div class="site-header">
+        <header class="site-header">
             <h1>📜 My Sweet Articles</h1>
-            <p>Sanat, Kültür ve Tatlı Bir Serüven</p>
-        </div>
+            <p>Sanatın Zarafeti & Tatlıların Büyüsü</p>
+        </header>
 
         <ul class="post-list">
             {% for post in site.posts %}
             <li>
-                <div class="post-card">
+                <article class="post-card">
                     <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="post-thumbnail">
                     <div class="post-content">
-                        <div>
-                            {% if post.category == 'Art' %}
-                                <span class="category-tag tag-art">🎨 Sanat & Kültür</span>
-                            {% else %}
-                                <span class="category-tag tag-recipe">🍮 Tatlı Tarifi</span>
-                            {% endif %}
-                            <br>
-                            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                        </div>
-                        <div class="post-date">📅 {{ post.date | date: "%d %B %Y" }}</div>
+                        <span class="category-tag {% if post.category == 'Art' %}tag-art{% else %}tag-recipe{% endif %}">
+                            {% if post.category == 'Art' %}🎨 Sanat & Kültür{% else %}🍮 Tatlı Tarifi{% endif %}
+                        </span>
+                        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        <span class="post-date">{{ post.date | date: "%d %B %Y" }}</span>
                     </div>
-                </div>
+                </article>
             </li>
             {% endfor %}
         </ul>
