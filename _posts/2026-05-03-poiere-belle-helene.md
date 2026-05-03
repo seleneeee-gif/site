@@ -6,7 +6,7 @@ date: 2026-05-03
 
 <div style="font-family: 'Georgia', serif; font-size: 1.1em; color: #333; line-height: 1.6;">
 
-### Ingredients
+### 🍐 Ingredients
 
 * **4 Pears** (firm varieties like Santa Maria or Bosc)
 * **2 cups** Water & **2 cups** Granulated Sugar
@@ -17,7 +17,7 @@ date: 2026-05-03
 * **1 tbsp** Butter (optional, for shine)
 * **Vanilla Ice Cream** & **Sliced Almonds** (for serving)
 
----
+<hr style="border: 0; border-top: 1px solid #eee; margin: 25px 0;">
 
 ### 👨‍🍳 Instructions
 
@@ -26,10 +26,11 @@ date: 2026-05-03
 3. **Make the Sauce:** Heat the cream in a small pan (do not boil). Remove from heat, add chopped chocolate, and stir until smooth. Add butter if using.
 4. **Serving:** Drain the pears and place them on a serving plate. Add a scoop of vanilla ice cream, pour the warm chocolate sauce over the top, and garnish with toasted almonds.
 
----
+<hr style="border: 0; border-top: 1px solid #eee; margin: 25px 0;">
 
 ### 💡 Pro Tip
-For the best flavor, let the pears **cool down inside the syrup** so they fully absorb the sweetness.
-
+<div style="background-color: #fff9eb; padding: 15px; border-left: 4px solid #f5a623; border-radius: 5px;">
+For the best flavor, let the pears <strong>cool down inside the syrup</strong> so they fully absorb the sweetness.
 </div>
 
+</div>
