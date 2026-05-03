@@ -1,10 +1,24 @@
 ---
 layout: default
 ---
-<div style="max-width: 700px; margin: 40px auto; padding: 40px; background: rgba(255,255,255,0.95); border-radius: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
-  <h1 style="color: #4a3728; text-align: center;">{{ page.title }}</h1>
-  <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
-  <div style="line-height: 1.8; color: #333; font-size: 1.1em;">
+<div style="max-width: 800px; margin: 40px auto; padding: 45px; background: rgba(255, 255, 255, 0.93); backdrop-filter: blur(12px); border-radius: 35px; box-shadow: 0 20px 50px rgba(0,0,0,0.12); border: 1px solid rgba(255,255,255,0.4);">
+  <h1 style="font-size: 2.8em; color: #4a3728; text-align: center; margin-bottom: 10px;">{{ page.title }}</h1>
+  <p style="text-align: center; color: #8c7b70; font-style: italic; margin-bottom: 35px; border-bottom: 1px double #d4b483; padding-bottom: 20px;">
+    📅 {{ page.date | date: "%B %d, %Y" }} • <span style="color: #d35400; font-weight: bold;">{{ page.category }}</span>
+  </p>
+  <div class="article-body" style="line-height: 1.9; color: #2c3e50; font-size: 1.15em; text-align: justify;">
     {{ content }}
   </div>
 </div>
+
+<style>
+  .article-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 30px auto;
+    border: 6px solid white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+</style>
