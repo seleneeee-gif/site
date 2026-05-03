@@ -6,22 +6,20 @@ category: Art
 thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Hat_sanati.jpg/500px-Hat_sanati.jpg"
 ---
 
+<div style="font-family: 'Georgia', serif; font-size: 1.15em; color: #2c3e50; line-height: 1.8; text-align: justify; padding: 40px; background: rgba(255, 255, 255, 0.9); border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #f1e4d1; backdrop-filter: blur(5px);">
 
-<div style="font-family: 'Georgia', serif; font-size: 1.15em; color: #2c3e50; line-height: 2; text-align: justify; padding: 40px; max-width: 100%; background: linear-gradient(135deg, #fffaf0 0%, #fdf5e6 100%); background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png'); border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.08); border: 1px solid #f1e4d1; position: relative; overflow: hidden;">
-
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 8px; background: linear-gradient(to right, #8b4513, #d2691e);"></div>
-
-    <div style="text-align: center; margin: 30px 0;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Hat_sanati.jpg/600px-Hat_sanati.jpg" style="max-width: 80%; border: 10px solid white; border-bottom: 30px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.15); transform: rotate(-1.5deg); border-radius: 5px;">
+    <div style="text-align: center; margin-bottom: 40px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Ottoman_calligraphy.JPG/640px-Ottoman_calligraphy.JPG" style="max-width: 90%; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); border: 1px solid #e8dcc4;">
     </div>
 
-    <h2 style="color: #8b4513;">Kelimelerin Kanatlarında Bir Devir</h2>
-    <p>Eski Türkçe, sadece bir dil değil; aynı zamanda bir zarafet, bir dünya görüşü ve muazzam bir sanat estetiğidir. Divan edebiyatı ile zirveye ulaşan bu dilde, her kelime bir mücevher gibi işlenmiş, her cümle bir mimari yapı gibi titizlikle kurulmuştur. "Lisan-ı Osmani" olarak da anılan bu zengin miras, içinde Farsçanın şiirselliğini ve Arapçanın derinliğini barındırırken, Türkçenin asaletini her daim korumuştur.</p>
+    <h2 style="color: #4a3728; border-bottom: 2px solid #d4b483; display: inline-block; padding-bottom: 5px;">Kelimelerin Kanatlarında Bir Devir</h2>
+    
+    <p style="margin-top: 25px;">Eski Türkçe, sadece bir dil değil; aynı zamanda bir zarafet, bir dünya görüşü ve muazzam bir sanat estetiğidir. Her kelime bir mücevher gibi işlenmiş, her cümle bir mimari yapı gibi titizlikle kurulmuştur.</p>
 
-    <h3 style="color: #d2691e;">Hat Sanatı: Çizgideki Musiki</h3>
-    <p>Eski Türkçenin estetiği sadece kulaklarda değil, gözlerde de hayat bulurdu. Hat sanatı, bu dilin görsel bir senfonisiydi. Kamış kalemden dökülen mürekkep, kağıt üzerinde sadece bir harf değil, bir ruh hali oluştururdu. Sülüs, Nesih veya Divani hatlarla yazılan bir beyit, bir tablodan farksızdı. Sanatçılar, "Hattat" sıfatıyla, sabrın ve disiplinin en güzel örneklerini verirken, kelimeleri adeta dans ettirirlerdi.</p>
+    <h3 style="color: #8b4513;">🎨 Hat Sanatı: Çizgideki Musiki</h3>
+    <p>Eski Türkçenin estetiği sadece kulaklarda değil, gözlerde de hayat bulurdu. Hat sanatı, bu dilin görsel bir senfonisiydi. Kamış kalemden dökülen mürekkep, kağıt üzerinde sadece bir harf değil, bir ruh hali oluştururdu.</p>
 
-    <h3 style="color: #d2691e;">Mefhumların Derinliği</h3>
-    <p>Bu dildeki kavramlar, günümüzdeki karşılıklarından çok daha derin manalar taşırdı. Örneğin bir şair "gönül" dediğinde, sadece bir organdan değil; kainatın sığdığı o uçsuz bucaksız manevi saraydan bahsederdi. Kelimeler arasındaki ses uyumu (aliterasyon) ve anlam oyunları, okuyucuyu bir labirentin içindeymiş gibi şaşırtır ve hayran bırakırdı. Bugün bu eski metinlere baktığımızda, sadece geçmişin dilini değil, ruhun en ince estetik kaygılarını da görüyoruz.</p>
+    <h3 style="color: #8b4513;">✨ Mefhumların Derinliği</h3>
+    <p>Kelimeler arasındaki ses uyumu ve anlam oyunları, okuyucuyu bir labirentin içindeymiş gibi şaşırtır. Bugün bu eski metinlere baktığımızda, ruhun en ince estetik kaygılarını da görüyoruz.</p>
 
 </div>
