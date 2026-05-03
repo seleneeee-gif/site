@@ -5,43 +5,35 @@ layout: default
 <html>
 <head>
     <style>
-        /* ESTETİK VE DOĞAL ARKA PLAN AYARI */
         body { 
-            background: #fffaf0;
+            /* RESİM ADINI BURADA GÜNCELLEDİM */
+            background-image: url('1777838696064.png'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
             margin: 0;
             font-family: 'Georgia', serif;
             min-height: 100vh;
         }
 
-        /* Arka plan görseli katmanı */
-        .site-bg {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-image: url('blog-bg.jpg'); /* Yüklediğin görselin adı */
-            background-size: cover;
-            background-position: center;
-            opacity: 0.2; /* Çok hafif ve şık durması için şeffaflık */
-            z-index: -1;
-        }
-
         .page-container { max-width: 950px; margin: 0 auto; padding: 40px 20px; position: relative; z-index: 1; }
         
-        /* Başlık Alanı */
         .site-header { 
             text-align: center; 
             margin-bottom: 70px; 
             padding: 40px;
             background: rgba(255, 255, 255, 0.4);
             border-radius: 30px;
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(8px); /* Arka planın o güzel detaylarını buğulu gösterir */
+            border: 1px solid rgba(255,255,255,0.3);
         }
         .site-header h1 { font-size: 3.8em; color: #2c3e50; margin-bottom: 10px; font-weight: bold; }
         .site-header p { font-style: italic; color: #7f8c8d; font-size: 1.3em; }
         
-        /* Kart Tasarımı */
         .post-list { list-style: none; padding: 0; }
         .post-card { 
-            background: rgba(255, 255, 255, 0.9); 
+            background: rgba(255, 255, 255, 0.88); 
             margin-bottom: 40px; 
             border-radius: 25px; 
             box-shadow: 0 10px 40px rgba(0,0,0,0.06); 
@@ -73,8 +65,6 @@ layout: default
     </style>
 </head>
 <body>
-    <div class="site-bg"></div>
-    
     <div class="page-container">
         <div class="site-header">
             <h1>🍰 My Sweet Articles</h1>
