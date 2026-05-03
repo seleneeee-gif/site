@@ -1,21 +1,81 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
-    <style>
-        body { font-family: 'Georgia', serif; max-width: 750px; margin: 0 auto; padding: 30px; background-color: #fcfcfc; line-height: 1.6; }
-        .back-btn { text-decoration: none; color: #f5a623; font-weight: bold; font-family: sans-serif; }
-        .card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-top: 20px; }
-        h1 { color: #2c3e50; text-align: center; border-bottom: 2px solid #f1f1f1; padding-bottom: 20px; }
-        hr { border: 0; border-top: 1px solid #eee; margin: 30px 0; }
-    </style>
-</head>
-<body>
-    <a href="{{ site.baseurl }}/" class="back-btn">← Ana Sayfaya Dön</a>
-    <div class="card">
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-    </div>
-</body>
-</html>
+---
+layout: default
+---
+<article class="post-content-container">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        📅 {{ page.date | date: "%-d %B %Y" }}
+      </time>
+      • <span class="category-badge">{{ page.category }}</span>
+    </p>
+  </header>
+
+  <div class="post-body">
+    {{ content }}
+  </div>
+</article>
+
+<style>
+  /* Sayfanın En Arkasındaki Resim */
+  body {
+    background-image: url('{{ site.baseurl }}/1777838696064.png') !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+  }
+
+  /* Yazının İçinde Durduğu Şeffaf Beyaz Kutu */
+  .post-content-container {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.88); /* Hafif şeffaf beyaz */
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px); /* Arkadaki Mona Lisa'yı buğulu gösterir */
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    font-family: 'Georgia', serif;
+  }
+
+  .post-title {
+    font-size: 3em;
+    color: #4a3728;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .post-meta {
+    text-align: center;
+    color: #8c7b70;
+    font-style: italic;
+    margin-bottom: 40px;
+    border-bottom: 1px double #d4b483;
+    padding-bottom: 20px;
+  }
+
+  .category-badge {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #d35400;
+  }
+
+  .post-body {
+    line-height: 1.8;
+    color: #2c3e50;
+    font-size: 1.15em;
+    text-align: justify;
+  }
+
+  /* Yazı içindeki resimlerin vintage durması için */
+  .post-body img {
+    max-width: 100%;
+    border-radius: 15px;
+    display: block;
+    margin: 30px auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border: 8px solid white;
+  }
+</style>
