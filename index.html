@@ -1,52 +1,60 @@
 ---
 layout: default
 ---
-<div class="post-glass-container">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">📅 {{ page.date | date: "%d %B %Y" }} • <span class="cat">{{ page.category }}</span></p>
+<style>
+  body { 
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-image: url('{{ site.baseurl }}/1777838696064.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .container-wide { max-width: 900px; margin: 0 auto; padding: 50px 20px; }
+
+  .banner-header { 
+    text-align: center; 
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 50px;
+  }
+
+  .vintage-card { 
+    background: rgba(255, 255, 255, 0.95); 
+    margin-bottom: 40px; 
+    border-radius: 25px; 
+    display: flex; 
+    overflow: hidden; 
+    height: 230px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  .card-img { width: 300px; object-fit: cover; }
+  .card-body { padding: 30px; display: flex; flex-direction: column; justify-content: center; }
+
+  .card-body a { color: #2c3e50; text-decoration: none; font-size: 1.6em; font-weight: bold; }
+  .category-label { font-size: 0.7em; font-weight: bold; color: #d35400; text-transform: uppercase; }
+</style>
+
+<div class="container-wide">
+  <header class="banner-header">
+    <h1>📜 My Sweet Articles</h1>
+    <p>Art, History & Classic Flavors</p>
   </header>
 
-  <div class="post-content">
-    {{ content }}
+  <div class="card-list">
+    {% for post in site.posts %}
+    <div class="vintage-card">
+      <img src="{{ post.thumbnail }}" class="card-img">
+      <div class="card-body">
+        <span class="category-label">{{ post.category }}</span>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <p style="color: #999; font-size: 0.9em; margin-top: 10px;">{{ post.date | date: "%B %d, %Y" }}</p>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </div>
-
-<style>
-  body {
-    background-image: url('{{ site.baseurl }}/1777838696064.png') !important;
-    background-size: cover !important;
-    background-attachment: fixed !important;
-    background-position: center !important;
-    margin: 0;
-  }
-
-  .post-glass-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.88);
-    backdrop-filter: blur(15px);
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    font-family: 'Georgia', serif;
-  }
-
-  .post-title { font-size: 2.5em; color: #4a3728; text-align: center; }
-  .post-meta { text-align: center; color: #8c7b70; font-style: italic; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
-  .cat { color: #d35400; font-weight: bold; text-transform: uppercase; }
-
-  .post-content { line-height: 1.8; color: #2c3e50; font-size: 1.1em; text-align: justify; }
-  .post-content p { margin-bottom: 1.5em; }
-  
-  .post-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    display: block;
-    margin: 20px auto;
-    border: 8px solid white;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-</style>
