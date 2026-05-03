@@ -1,24 +1,22 @@
 ---
 layout: default
 ---
-<article class="post-content-container">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">
-        📅 {{ page.date | date: "%-d %B %Y" }}
-      </time>
-      • <span class="category-badge">{{ page.category }}</span>
+<article class="post-container">
+  <header class="post-header-area">
+    <h1 class="post-main-title">{{ page.title }}</h1>
+    <p class="post-metadata">
+      <span>📅 {{ page.date | date: "%d %B %Y" }}</span> • 
+      <span class="category-highlight">{{ page.category }}</span>
     </p>
   </header>
 
-  <div class="post-body">
+  <div class="post-body-content">
     {{ content }}
   </div>
 </article>
 
 <style>
-  /* Sayfanın En Arkasındaki Resim */
+  /* Arka planın yazı sayfasında da devam etmesini garanti ediyoruz */
   body {
     background-image: url('{{ site.baseurl }}/1777838696064.png') !important;
     background-size: cover !important;
@@ -26,52 +24,32 @@ layout: default
     background-position: center !important;
   }
 
-  /* Yazının İçinde Durduğu Şeffaf Beyaz Kutu */
-  .post-content-container {
+  .post-container {
     max-width: 850px;
-    margin: 60px auto;
+    margin: 50px auto;
     padding: 50px;
-    background: rgba(255, 255, 255, 0.88); /* Hafif şeffaf beyaz */
-    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 35px;
+    backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(12px); /* Arkadaki Mona Lisa'yı buğulu gösterir */
     box-shadow: 0 20px 50px rgba(0,0,0,0.1);
     font-family: 'Georgia', serif;
   }
 
-  .post-title {
-    font-size: 3em;
-    color: #4a3728;
-    text-align: center;
-    margin-bottom: 10px;
-  }
+  .post-main-title { font-size: 2.8em; color: #4a3728; text-align: center; margin-bottom: 15px; }
+  .post-metadata { text-align: center; color: #8c7b70; font-style: italic; margin-bottom: 40px; border-bottom: 1px double #d4b483; padding-bottom: 20px; }
+  .category-highlight { color: #d35400; text-transform: uppercase; font-weight: bold; }
 
-  .post-meta {
-    text-align: center;
-    color: #8c7b70;
-    font-style: italic;
-    margin-bottom: 40px;
-    border-bottom: 1px double #d4b483;
-    padding-bottom: 20px;
-  }
-
-  .category-badge {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 0.8em;
-    color: #d35400;
-  }
-
-  .post-body {
-    line-height: 1.8;
-    color: #2c3e50;
-    font-size: 1.15em;
-    text-align: justify;
-  }
-
-  /* Yazı içindeki resimlerin vintage durması için */
-  .post-body img {
+  .post-body-content { line-height: 1.9; color: #2c3e50; font-size: 1.15em; text-align: justify; }
+  
+  /* Yazı içindeki paragraflar arası boşluk sağlama */
+  .post-body-content p { margin-bottom: 1.8em; }
+  .post-body-content h3 { margin-top: 2em; color: #8b4513; }
+  
+  /* Resimlerin düzgün ve çerçeveli görünmesi */
+  .post-body-content img {
     max-width: 100%;
+    height: auto;
     border-radius: 15px;
     display: block;
     margin: 30px auto;
