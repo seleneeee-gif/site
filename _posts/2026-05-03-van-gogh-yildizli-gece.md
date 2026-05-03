@@ -14,6 +14,11 @@ thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/600px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" style="max-width: 85%; border: 10px solid white; border-bottom: 30px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.15); transform: rotate(1deg); border-radius: 5px;">
     </div>
 
-    <p>Vincent van Gogh dendiğinde akla ilk gelen eser şüphesiz <strong>"Yıldızlı Gece"</strong>dir. Bilim insanları tabloyu incelediklerinde, gökyüzündeki o dairesel fırça darbelerinin fizikteki türbülanslı akış matematiğiyle birebir örtüştüğünü keşfettiler. Van Gogh, en zor zamanlarında bu gizemi sezgisel olarak tuvale dökmüştü.</p>
+    <p style="margin-bottom: 25px;">Vincent van Gogh dendiğinde akla ilk gelen eser şüphesiz <strong>"Yıldızlı Gece"</strong>dir. 1889 yılında Saint-Rémy-de-Provence'daki akıl hastanesi odasından dışarıya bakarken resmettiği bu gökyüzü, sadece bir sanat eseri değil, aynı zamanda fizik dünyasının bir yansımasıdır.</p>
+
+    <h2 style="color: #2980b9; border-bottom: 1px solid #d6eaf8; padding-bottom: 5px;">Fırçadaki Türbülans</h2>
+    <p style="margin-bottom: 25px;">Modern bilim insanları, Van Gogh'un o dairesel ve karmaşık fırça darbelerini incelediklerinde inanılmaz bir şey keşfettiler: Bu desenler, akışkanlar mekaniğindeki "türbülans" matematiğiyle tam bir uyum içindedir. Sanatçının en derin zihinsel fırtınaları yaşadığı bir dönemde, doğanın en karmaşık desenini sezgisel olarak kavraması, dehasının en büyük kanıtıdır.</p>
+
+    <p>Resimdeki dev selvi ağacı, genellikle ölümü temsil eder ancak burada gökyüzüyle yeryüzünü bağlayan dev bir alev gibidir. Van Gogh bize şunu fısıldar: Karanlığın içinde bile, parlayan yıldızlar ve bir düzen vardır.</p>
 
 </div>
