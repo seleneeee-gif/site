@@ -1,57 +1,19 @@
 ---
 layout: default
 ---
-<style>
-  body { 
-    margin: 0;
-    font-family: 'Georgia', serif;
-    background-image: url('{{ site.baseurl }}/1777838696064.png');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-  }
-
-  .container-wide { max-width: 900px; margin: 0 auto; padding: 50px 20px; }
-
-  .banner-header { 
-    text-align: center; 
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 30px;
-    backdrop-filter: blur(10px);
-    margin-bottom: 50px;
-  }
-
-  .vintage-card { 
-    background: rgba(255, 255, 255, 0.95); 
-    margin-bottom: 40px; 
-    border-radius: 25px; 
-    display: flex; 
-    overflow: hidden; 
-    height: 230px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  }
-
-  .card-img { width: 300px; object-fit: cover; }
-  .card-body { padding: 30px; display: flex; flex-direction: column; justify-content: center; }
-
-  .card-body a { color: #2c3e50; text-decoration: none; font-size: 1.6em; font-weight: bold; }
-  .category-label { font-size: 0.7em; font-weight: bold; color: #d35400; text-transform: uppercase; }
-</style>
-
-<div class="container-wide">
-  <header class="banner-header">
-    <h1>📜 My Sweet Articles</h1>
-    <p>Art, History & Classic Flavors</p>
+<div style="max-width: 900px; margin: 0 auto; padding: 50px 20px;">
+  <header style="text-align: center; padding: 40px; background: rgba(255, 255, 255, 0.5); border-radius: 30px; backdrop-filter: blur(10px); margin-bottom: 50px;">
+    <h1 style="font-size: 3em; color: #4a3728; margin: 0;">📜 My Sweet Articles</h1>
+    <p style="color: #6d5b4e;">Art, History & Classic Flavors</p>
   </header>
 
-  <div class="card-list">
+  <div style="display: flex; flex-direction: column; gap: 40px;">
     {% for post in site.posts %}
-    <div class="vintage-card">
-      <img src="{{ post.thumbnail }}" class="card-img">
-      <div class="card-body">
-        <span class="category-label">{{ post.category }}</span>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <div style="background: rgba(255, 255, 255, 0.95); border-radius: 25px; display: flex; overflow: hidden; height: 230px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+      <img src="{{ post.thumbnail }}" style="width: 300px; object-fit: cover;">
+      <div style="padding: 30px; display: flex; flex-direction: column; justify-content: center;">
+        <span style="font-size: 0.7em; font-weight: bold; color: #d35400; text-transform: uppercase;">{{ post.category }}</span>
+        <a href="{{ post.url | relative_url }}" style="color: #2c3e50; text-decoration: none; font-size: 1.6em; font-weight: bold;">{{ post.title }}</a>
         <p style="color: #999; font-size: 0.9em; margin-top: 10px;">{{ post.date | date: "%B %d, %Y" }}</p>
       </div>
     </div>
