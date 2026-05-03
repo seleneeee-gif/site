@@ -2,7 +2,21 @@
 layout: post
 title: "Classic French Crème Brûlée"
 date: 2026-05-03
+category: Recipe
+thumbnail: "https://images.unsplash.com/photo-1470124182917-cc677dd84d9a?q=80&w=400"
 ---
+
+<div style="font-family: 'Georgia', serif; font-size: 1.15em; color: #2c3e50; line-height: 2; text-align: justify; padding: 40px; max-width: 100%; background: linear-gradient(135deg, #fffaf0 0%, #fdf5e6 100%); background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png'); border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.08); border: 1px solid #f1e4d1; position: relative; overflow: hidden;">
+
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 8px; background: #f1c40f;"></div>
+
+    <div style="text-align: center; margin: 30px 0;">
+        <img src="https://images.unsplash.com/photo-1470124182917-cc677dd84d9a?q=80&w=600" style="max-width: 80%; border: 10px solid white; border-bottom: 30px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transform: rotate(-1deg); border-radius: 5px;">
+    </div>
+
+    <h2 style="color: #f39c12;">🍮 Vanilla Bean Crème Brûlée</h2>
+
+
 
 The best Creme Brulee recipe is the classic French method, using heavy cream, egg yolks, and high-quality vanilla, baked in a bain-marie and caramelized with a torch.
 
@@ -48,3 +62,4 @@ The best Creme Brulee recipe is the classic French method, using heavy cream, eg
 
 * **The Crust:** A kitchen torch gives the best results.
 
+</div>
