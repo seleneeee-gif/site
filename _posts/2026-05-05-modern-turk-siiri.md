@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Kelimelerin Ötesinde: İkinci Yeni"
+title: "Beyond Words: The Second New Movement"
 date: 2026-05-03
 category: Art
 thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Cemal_S%C3%BCreya%2C_portrait_photo.png/400px-Cemal_S%C3%BCreya%2C_portrait_photo.png"
@@ -14,12 +14,15 @@ thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Cemal_S%C3
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Cemal_S%C3%BCreya%2C_portrait_photo.png/400px-Cemal_S%C3%BCreya%2C_portrait_photo.png" style="max-width: 60%; border: 10px solid white; border-bottom: 30px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transform: rotate(-1deg); border-radius: 5px;">
     </div>
 
-    <p style="margin-bottom: 25px;">1950’li yıllarda Türk şiirinde esen rüzgarın adıydı <strong>İkinci Yeni</strong>. Garip akımının basitliğine ve sıradanlığına bir tepki olarak doğan bu akım, dili bir oyun alanı olarak gördü. Turgut Uyar'ın yalnızlığı, Edip Cansever'in dramatik kurguları ve Cemal Süreya'nın erotizmi, şiiri kapalı ama bir o kadar da zengin bir dünyaya taşıdı.</p>
+    <h2 style="color: #8e44ad;">A Revolution in Turkish Poetry</h2>
 
-    <blockquote style="margin: 35px 0; padding: 25px; border-left: 6px solid #8e44ad; background: rgba(142,68,173,0.05); font-style: italic; color: #4a235a;">
-        "Sizin hiç babanız öldü mü? / Benim bir kere öldü kör oldum / Takas ettim bir pencereyle..." — Cemal Süreya
+    <p>In the mid-1950s, a radical shift occurred in Turkish literature known as the <strong>Second New (İkinci Yeni)</strong> movement. Born as a reaction against the simplicity of the previous "Garip" movement, these poets—including Cemal Süreya, Turgut Uyar, and Edip Cansever—pushed the boundaries of the Turkish language to its absolute limits. They didn't want poetry to just "tell" something; they wanted it to evoke a deep, surreal feeling.</p>
+
+    <blockquote style="margin: 30px 0; padding: 25px; border-left: 5px solid #8e44ad; background: rgba(142,68,173,0.05); font-style: italic;">
+        "Did your father ever die? / Mine died once, and I went blind / I traded it for a window..." — Cemal Süreya
     </blockquote>
 
-    <p style="margin-bottom: 25px;">İkinci Yeni şairleri için imge her şeydi. Şiir, bir şey anlatmak için değil, okuyucuda bir duygu uyandırmak için yazılırdı. Bu yönüyle resimdeki sürrealizme çok benzerler; mantığın sınırlarını zorlayıp, rüyaların dilini şiire kazandırmışlardır.</p>
+    <h3 style="color: #8e44ad;">Surrealism and Imagery</h3>
+    <p>The Second New poets utilized abstract imagery and complex metaphors, often drawing parallels with the Surrealist movement in visual arts. They believed that the meaning of a poem was not found in its literal translation, but in the resonance it created within the reader's subconscious. This era marked the birth of a more intellectual, sensitive, and profoundly complex style of writing that continues to influence Turkish literature today.</p>
 
 </div>
