@@ -14,9 +14,6 @@ thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/600px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" style="max-width: 85%; border: 10px solid white; border-bottom: 30px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.15); transform: rotate(1deg); border-radius: 5px;">
     </div>
 
-    <p style="margin-bottom: 25px;">Vincent van Gogh dendiğinde akla ilk gelen eser şüphesiz <strong>"Yıldızlı Gece"</strong>dir. Ancak bu tablo, sadece bir manzara değil; doğadaki en karmaşık olaylardan biri olan türbülansı içinde barındıran bir başyapıttır.</p>
-
-    <h3 style="color: #2980b9; margin-top: 35px;">🌀 Fırça Darbelerindeki Fizik</h3>
-    <p style="margin-bottom: 25px;">Bilim insanları tabloyu incelediklerinde, dairesel fırça darbelerinin fizikteki türbülanslı akış matematiğiyle örtüştüğünü keşfettiler. Van Gogh, en zor zamanlarında bu gizemi sezgisel olarak tuvale dökmüştü.</p>
+    <p>Vincent van Gogh dendiğinde akla ilk gelen eser şüphesiz <strong>"Yıldızlı Gece"</strong>dir. Bilim insanları tabloyu incelediklerinde, gökyüzündeki o dairesel fırça darbelerinin fizikteki türbülanslı akış matematiğiyle birebir örtüştüğünü keşfettiler. Van Gogh, en zor zamanlarında bu gizemi sezgisel olarak tuvale dökmüştü.</p>
 
 </div>
