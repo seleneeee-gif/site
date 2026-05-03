@@ -2,22 +2,18 @@
 layout: 
 ---
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title | default: site.title }}</title>
+  <title>{{ page.title }}</title>
   <style>
     body { 
-      margin: 0; padding: 0;
-      background-image: url('{{ "/1777838696064.png" | relative_url }}');
+      margin: 0; 
+      background-image: url('{{ site.baseurl }}/1777838696064.png');
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
-      background-repeat: no-repeat;
-      background-color: #fdf5e6;
       font-family: 'Georgia', serif;
-      min-height: 100vh;
     }
   </style>
 </head>
