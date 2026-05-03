@@ -3,8 +3,9 @@ layout: post
 title: "Poire Belle Hélène"
 date: 2026-05-03
 category: Recipe
-thumbnail: "https://images.unsplash.com/photo-1541783245831-57d69a495d48?q=80&w=400"
+thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Poire_Belle_H%C3%A9l%C3%A8ne_DSC00832.jpg/640px-Poire_Belle_H%C3%A9l%C3%A8ne_DSC00832.jpg"
 ---
+
 
 <div style="font-family: 'Georgia', serif; font-size: 1.1em; color: #2c3e50; line-height: 1.8; text-align: justify; padding: 40px; max-width: 100%; background: linear-gradient(135deg, #fffaf0 0%, #fdf5e6 100%); background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png'); border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.08); border: 1px solid #f1e4d1; position: relative; overflow: hidden;">
 
