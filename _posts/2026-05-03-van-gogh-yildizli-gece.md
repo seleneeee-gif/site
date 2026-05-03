@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Van Gogh: Yıldızlı Gece ve Matematiğin Estetiği"
+title: "Van Gogh: Starry Night and the Aesthetics of Mathematics"
 date: 2026-05-03
 category: Art
 thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/600px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
@@ -14,11 +14,13 @@ thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/600px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" style="max-width: 85%; border: 10px solid white; border-bottom: 30px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.15); transform: rotate(1deg); border-radius: 5px;">
     </div>
 
-    <p style="margin-bottom: 25px;">Vincent van Gogh dendiğinde akla ilk gelen eser şüphesiz <strong>"Yıldızlı Gece"</strong>dir. 1889 yılında Saint-Rémy-de-Provence'daki akıl hastanesi odasından dışarıya bakarken resmettiği bu gökyüzü, sadece bir sanat eseri değil, aynı zamanda fizik dünyasının bir yansımasıdır.</p>
+    <h2 style="color: #2980b9;">The Masterpiece Born from Turmoil</h2>
+    
+    <p>Vincent van Gogh’s <strong>"The Starry Night"</strong> is perhaps the most iconic image in the history of Western art. Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an idealized village. Van Gogh created this masterpiece during one of the most turbulent periods of his life, yet the painting conveys a sense of cosmic order and profound beauty.</p>
 
-    <h2 style="color: #2980b9; border-bottom: 1px solid #d6eaf8; padding-bottom: 5px;">Fırçadaki Türbülans</h2>
-    <p style="margin-bottom: 25px;">Modern bilim insanları, Van Gogh'un o dairesel ve karmaşık fırça darbelerini incelediklerinde inanılmaz bir şey keşfettiler: Bu desenler, akışkanlar mekaniğindeki "türbülans" matematiğiyle tam bir uyum içindedir. Sanatçının en derin zihinsel fırtınaları yaşadığı bir dönemde, doğanın en karmaşık desenini sezgisel olarak kavraması, dehasının en büyük kanıtıdır.</p>
+    <h3 style="color: #2980b9;">The Turbulence of the Soul and Physics</h3>
+    <p>Interestingly, modern scientists who have analyzed the circular brushstrokes in the sky found that they precisely match the mathematical structure of turbulent flow in fluid dynamics. This suggests that Van Gogh, in his state of heightened perception, was able to capture one of the most complex patterns in nature—a phenomenon known as "turbulent flow"—which is notoriously difficult to represent both in art and science.</p>
 
-    <p>Resimdeki dev selvi ağacı, genellikle ölümü temsil eder ancak burada gökyüzüyle yeryüzünü bağlayan dev bir alev gibidir. Van Gogh bize şunu fısıldar: Karanlığın içinde bile, parlayan yıldızlar ve bir düzen vardır.</p>
+    <p>The dark, flame-like cypress tree in the foreground serves as a bridge between life and death, reaching towards the sky like a giant dark flame. It connects the terrestrial world with the celestial one, suggesting that even in our darkest moments, there is a connection to the vastness of the universe.</p>
 
 </div>
