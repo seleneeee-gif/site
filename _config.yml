@@ -1,3 +1,4 @@
 title: My Sweet Articles
 baseurl: ""
 url: "https://seleneeee-gif.github.io"
+permalink: /:title/
