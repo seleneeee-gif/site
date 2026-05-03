@@ -1,18 +1,16 @@
 title: My Sweet Articles
-description: A journey through the elegance of art and the sweetness of classic recipes.
+description: A journey through art and flavors.
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
 
-# URL Ayarları
-# Siten alt klasörde göründüğü için burayı boş bırakıyoruz
-baseurl: ""
+# Linklerin birbirine girmemesi için en sade ayar
+baseurl: "/site"
 url: "https://seleneeee-gif.github.io"
 
-# Dosya Dahil Etme (Arka plan için kritik)
+# Resim dosyanı GitHub'a zorla kabul ettiriyoruz
 include:
   - 1777838696064.png
 
-# Markdown ve Tema
-markdown: kramdown
-theme: jekyll-theme-minimal
-
-# Link yapısını basitleştiriyoruz (Error vermemesi için)
-permalink: /:title.html
+# Yazı linklerini basitleştiriyoruz
+permalink: /:title:output_ext
