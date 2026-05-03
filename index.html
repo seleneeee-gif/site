@@ -5,45 +5,61 @@ layout: default
 <html>
 <head>
     <style>
-        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-        .header { text-align: center; margin-bottom: 60px; }
-        .header h1 { font-family: 'Georgia', serif; font-size: 3em; color: #2c3e50; margin-bottom: 10px; }
-        .header p { font-style: italic; color: #7f8c8d; }
+        .page-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .site-header { text-align: center; margin-bottom: 70px; }
+        .site-header h1 { font-family: 'Georgia', serif; font-size: 3.2em; color: #2c3e50; margin-bottom: 10px; font-weight: bold; }
+        .site-header p { font-style: italic; color: #7f8c8d; }
         
         .post-list { list-style: none; padding: 0; }
         .post-card { 
             background: white; 
-            margin-bottom: 30px; 
-            padding: 30px; 
-            border-radius: 15px; 
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05); 
-            transition: 0.3s;
-            border-top: 5px solid #f5a623; /* Varsayılan renk */
+            margin-bottom: 35px; 
+            border-radius: 18px; 
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06); 
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex; /* İçeriği yan yana dizmek için */
+            overflow: hidden; /* Resimlerin köşelerini kesmek için */
+            border: 1px solid #eee;
         }
-        /* Sanat/Öğretici yazılar için farklı renk */
-        .post-card.art { border-top-color: #3498db; } 
         
-        .post-card:hover { transform: translateY(-5px); }
+        .post-card:hover { transform: translateY(-5px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
+        
+        /* Thumbnail Resmi */
+        .post-thumbnail { 
+            width: 250px; /* Resim genişliği */
+            height: 250px; 
+            object-fit: cover; /* Resmi sığdırmak için */
+            flex-shrink: 0; /* Resmin küçülmesini engelle */
+            border-right: 1px solid #eee;
+        }
+
+        /* Metin İçeriği */
+        .post-content { padding: 30px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; }
+        
         .category-tag { 
             display: inline-block; 
-            padding: 5px 12px; 
+            padding: 6px 14px; 
             border-radius: 20px; 
-            font-size: 0.75em; 
+            font-size: 0.8em; 
             text-transform: uppercase; 
             font-weight: bold; 
             margin-bottom: 15px;
             letter-spacing: 1px;
+            text-decoration: none;
         }
-        .tag-recipe { background: #fff3e0; color: #e67e22; }
-        .tag-art { background: #e1f5fe; color: #2980b9; }
+        
+        /* Renkli Etiketler */
+        .tag-art { background: #ebf5fb; color: #2980b9; border: 1px solid #d6eaf8; }
+        .tag-recipe { background: #fff3e0; color: #e67e22; border: 1px solid #ffe0b2; }
 
-        .post-link { color: #2c3e50; text-decoration: none; font-size: 1.6em; font-family: 'Georgia', serif; font-weight: bold; }
-        .post-date { color: #bdc3c7; margin-top: 10px; font-size: 0.85em; }
+        .post-link { color: #2c3e50; text-decoration: none; font-size: 1.8em; font-family: 'Georgia', serif; font-weight: bold; line-height: 1.3; }
+        .post-link:hover { color: #8e44ad; }
+        .post-date { color: #bdc3c7; margin-top: 15px; font-size: 0.9em; font-style: italic; }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
+<body style="background: linear-gradient(135deg, #fffaf0 0%, #fdf5e6 100%); background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png'); min-height: 100vh;">
+    <div class="page-container">
+        <div class="site-header">
             <h1>🍰 My Sweet Articles</h1>
             <p>Zihninizi ve damağınızı besleyen tatlı dokunuşlar.</p>
         </div>
@@ -51,16 +67,26 @@ layout: default
         <ul class="post-list">
             {% for post in site.posts %}
             <li>
-                <div class="post-card {% if post.category == 'Art' %}art{% endif %}">
-                    {% if post.category == 'Art' %}
-                        <span class="category-tag tag-art">Sanat & Kültür</span>
+                <div class="post-card">
+                    {% if post.thumbnail %}
+                        <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="post-thumbnail">
                     {% else %}
-                        <span class="category-tag tag-recipe">Tatlı Tarifi</span>
+                        <img src="https://images.unsplash.com/photo-1586985289906-406988974504?q=80&w=400" class="post-thumbnail">
                     {% endif %}
                     
-                    <br>
-                    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                    <div class="post-date">{{ post.date | date: "%d %B %Y" }}</div>
+                    <div class="post-content">
+                        <div>
+                            {% if post.category == 'Art' %}
+                                <a href="#" class="category-tag tag-art">Sanat & Kültür</a>
+                            {% else %}
+                                <a href="#" class="category-tag tag-recipe">Tatlı Tarifi</a>
+                            {% endif %}
+                            
+                            <br>
+                            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        </div>
+                        <div class="post-date">{{ post.date | date: "%d %B %Y" }}</div>
+                    </div>
                 </div>
             </li>
             {% endfor %}
