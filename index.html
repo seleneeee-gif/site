@@ -5,49 +5,26 @@ layout: default
 <html>
 <head>
     <style>
-        .container { max-width: 700px; margin: 0 auto; padding: 40px 20px; }
-        .header { text-align: center; margin-bottom: 50px; }
-        h1 { color: #2c3e50; font-size: 2.5em; }
-        
-        .post-list { list-style: none; padding: 0; }
-        .post-card { 
-            background: white; 
-            margin-bottom: 20px; /* Yan yana gelmesini bu engeller */
-            padding: 25px; 
-            border-radius: 15px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
-            display: block; /* Alt alta durmasını garanti eder */
-            border-left: 6px solid #f5a623;
-            transition: 0.3s;
-        }
-        .post-card:hover { transform: scale(1.02); }
-        .post-link { 
-            color: #d35400; 
-            text-decoration: none; 
-            font-size: 1.4em; 
-            font-weight: bold; 
-            display: block; 
-        }
-        .post-date { color: #999; margin-top: 8px; font-size: 0.9em; }
+        .header { text-align: center; padding: 50px 0; }
+        .post-list { list-style: none; padding: 0; max-width: 600px; margin: 0 auto; }
+        .post-card { background: white; margin: 15px 0; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: 0.3s; border-left: 5px solid #f5a623; }
+        .post-card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+        .post-link { color: #333; text-decoration: none; font-size: 1.4em; font-weight: bold; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🍰 My Sweet Articles</h1>
-            <p>Lezzetli bir yolculuğa hoş geldiniz.</p>
-        </div>
-
-        <ul class="post-list">
-            {% for post in site.posts %}
-            <li>
-                <div class="post-card">
-                    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                    <div class="post-date">{{ post.date | date: "%d.%m.%Y" }}</div>
-                </div>
-            </li>
-            {% endfor %}
-        </ul>
+    <div class="header">
+        <h1>🍰 My Sweet Articles</h1>
+        <p>En yeni tariflerim aşağıda listelenmiştir.</p>
     </div>
+
+    <ul class="post-list">
+        {% for post in site.posts %}
+        <li class="post-card">
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <div style="color: #999; margin-top: 5px;">{{ post.date | date: "%d.%m.%Y" }}</div>
+        </li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
