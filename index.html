@@ -5,72 +5,75 @@ layout: default
 <html>
 <head>
     <style>
-        /* Arka plan katmanları */
+        /* DOĞAL VE ESTETİK ARKA PLAN */
         body { 
-            background: url('https://www.transparenttextures.com/patterns/cream-paper.png'), #fffaf0;
-            background-attachment: fixed;
+            background-color: #fffaf0; /* Krem rengi */
+            background-image: 
+                radial-gradient(#e67e22 0.5px, transparent 0.5px), 
+                radial-gradient(#8e44ad 0.5px, #fffaf0 0.5px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
             min-height: 100vh;
             margin: 0;
+            font-family: 'Georgia', serif;
         }
 
-        /* Çıkartmalı arka plan görseli için özel alan */
-        .background-overlay {
+        /* KÜLTÜR VE TATLI İKONLARI (Arka planda hafifçe görünenler) */
+        .bg-icons {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background-image: url('stickers-bg.png'); /* Yüklediğin görselin adı */
-            background-size: 500px;
-            background-repeat: repeat;
-            opacity: 0.2; /* Çıkartmaların hafif görünmesi için */
-            z-index: -1;
+            z-index: 0;
+            opacity: 0.1; /* Çok hafif görünmesi için */
+            pointer-events: none;
+            font-size: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 50px;
         }
 
-        .page-container { max-width: 950px; margin: 0 auto; padding: 40px 20px; position: relative; }
-        .site-header { text-align: center; margin-bottom: 70px; background: rgba(255, 250, 240, 0.8); padding: 20px; border-radius: 50px; }
-        .site-header h1 { font-family: 'Georgia', serif; font-size: 3.5em; color: #2c3e50; margin-bottom: 10px; font-weight: bold; }
+        .page-container { max-width: 900px; margin: 0 auto; padding: 40px 20px; position: relative; z-index: 1; }
+        .site-header { text-align: center; margin-bottom: 70px; }
+        .site-header h1 { font-size: 3.5em; color: #2c3e50; font-weight: bold; margin-bottom: 5px; }
         .site-header p { font-style: italic; color: #7f8c8d; font-size: 1.2em; }
         
         .post-list { list-style: none; padding: 0; }
         .post-card { 
-            background: white; 
-            margin-bottom: 40px; 
+            background: rgba(255, 255, 255, 0.95); 
+            margin-bottom: 35px; 
             border-radius: 20px; 
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08); 
-            transition: transform 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
             display: flex; 
             overflow: hidden; 
-            border: 1px solid rgba(0,0,0,0.05);
-            height: 280px;
-        }
-        
-        .post-card:hover { transform: translateY(-8px); }
-        
-        .post-thumbnail { 
-            width: 320px; 
-            height: 100%; 
-            object-fit: cover; 
-            flex-shrink: 0; 
-            background: #eee; /* Resim yüklenene kadar gri görünsün, pasta değil! */
+            height: 250px;
+            border: 1px solid #f1e4d1;
         }
 
-        .post-content { padding: 35px; display: flex; flex-direction: column; justify-content: center; flex-grow: 1; }
+        .post-thumbnail { 
+            width: 300px; height: 100%; object-fit: cover; flex-shrink: 0;
+            background: #fdf5e6; /* Resim yüklenene kadar boş kalmasın */
+        }
+
+        .post-content { padding: 30px; display: flex; flex-direction: column; justify-content: center; }
         
         .category-tag { 
-            display: inline-block; padding: 8px 16px; border-radius: 25px; 
-            font-size: 0.75em; text-transform: uppercase; font-weight: bold; 
-            margin-bottom: 20px; letter-spacing: 1.5px;
+            display: inline-block; padding: 5px 12px; border-radius: 15px; 
+            font-size: 0.7em; text-transform: uppercase; font-weight: bold; margin-bottom: 15px;
         }
-        
         .tag-art { background: #f4ecf7; color: #8e44ad; }
         .tag-recipe { background: #fef5e7; color: #d35400; }
 
-        .post-link { color: #2c3e50; text-decoration: none; font-size: 1.9em; font-family: 'Georgia', serif; font-weight: bold; }
-        .post-link:hover { color: #8e44ad; }
-        .post-date { color: #bdc3c7; margin-top: 20px; font-size: 0.9em; font-style: italic; }
+        .post-link { color: #2c3e50; text-decoration: none; font-size: 1.7em; font-weight: bold; }
+        .post-link:hover { color: #e67e22; }
     </style>
 </head>
 <body>
-    <div class="background-overlay"></div>
-    
+    <div class="bg-icons">
+        <span>🗼</span> <span>🍰</span> <span>🎨</span> <span>🥐</span> 
+        <span>🖼️</span> <span>🍪</span> <span>🕌</span> <span>🍮</span>
+        <span>🗼</span> <span>🍰</span> <span>🎨</span> <span>🥐</span>
+    </div>
+
     <div class="page-container">
         <div class="site-header">
             <h1>🍰 My Sweet Articles</h1>
@@ -81,19 +84,15 @@ layout: default
             {% for post in site.posts %}
             <li>
                 <div class="post-card">
-                    <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="post-thumbnail">
-                    
+                    <img src="{{ post.thumbnail }}" class="post-thumbnail">
                     <div class="post-content">
-                        <div>
-                            {% if post.category == 'Art' %}
-                                <span class="category-tag tag-art">🎨 Sanat & Kültür</span>
-                            {% else %}
-                                <span class="category-tag tag-recipe">🍮 Tatlı Tarifi</span>
-                            {% endif %}
-                            <br>
-                            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                        </div>
-                        <div class="post-date">📅 {{ post.date | date: "%d %B %Y" }}</div>
+                        {% if post.category == 'Art' %}
+                            <span class="category-tag tag-art">🎨 Sanat & Kültür</span>
+                        {% else %}
+                            <span class="category-tag tag-recipe">🍮 Tatlı Tarifi</span>
+                        {% endif %}
+                        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        <div style="color: #bdc3c7; margin-top: 15px; font-style: italic;">{{ post.date | date: "%d %B %Y" }}</div>
                     </div>
                 </div>
             </li>
