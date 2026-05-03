@@ -14,6 +14,9 @@ thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa_
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa_by_Leonardo_da_Vinci_from_C2RMF_retouched.jpg/400px-Mona_Lisa_by_Leonardo_da_Vinci_from_C2RMF_retouched.jpg" style="max-width: 70%; border: 10px solid white; border-bottom: 30px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transform: rotate(-1.5deg); border-radius: 5px;">
     </div>
 
-    <p style="margin-bottom: 30px;">İnsanlık tarihi boyunca sanat, sadece bir estetik arayışı değil; insanın evreni ve kendi benliğini anlama çabası olmuştur. Rönesans'tan modernizme her fırça darbesi bir dönemin ruhunu taşır.</p>
+    <p>Sanat tarihi, insanın kendisini anlama yolculuğudur. Rönesans'ın kusursuz anatomisinden Barok'un dramatik ışığına, Empresyonizm'in anlık izlenimlerinden Modernizm'in soyut dünyasına kadar her durak, insan ruhunun yeni bir yansımasıdır.</p>
 
-    </div>
+    <h2 style="color: #8e44ad; border-bottom: 2px solid #f1f1f1; padding-bottom: 10px;">Rönesans'ın Mirası</h2>
+    <p>Leonardo ve Michelangelo, insanı evrenin merkezine koyarak sanatı bilimle birleştirdiler. Bugün hala bir esere baktığımızda o "insani" dokunuşu arıyoruz.</p>
+
+</div>
