@@ -1,59 +1,52 @@
 ---
 layout: default
 ---
-<article class="post-container">
-  <header class="post-header-area">
-    <h1 class="post-main-title">{{ page.title }}</h1>
-    <p class="post-metadata">
-      <span>📅 {{ page.date | date: "%d %B %Y" }}</span> • 
-      <span class="category-highlight">{{ page.category }}</span>
-    </p>
+<div class="post-glass-container">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">📅 {{ page.date | date: "%d %B %Y" }} • <span class="cat">{{ page.category }}</span></p>
   </header>
 
-  <div class="post-body-content">
+  <div class="post-content">
     {{ content }}
   </div>
-</article>
+</div>
 
 <style>
-  /* Arka planın yazı sayfasında da devam etmesini garanti ediyoruz */
   body {
     background-image: url('{{ site.baseurl }}/1777838696064.png') !important;
     background-size: cover !important;
     background-attachment: fixed !important;
     background-position: center !important;
+    margin: 0;
   }
 
-  .post-container {
-    max-width: 850px;
-    margin: 50px auto;
-    padding: 50px;
+  .post-glass-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
     background: rgba(255, 255, 255, 0.88);
-    border-radius: 35px;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     font-family: 'Georgia', serif;
   }
 
-  .post-main-title { font-size: 2.8em; color: #4a3728; text-align: center; margin-bottom: 15px; }
-  .post-metadata { text-align: center; color: #8c7b70; font-style: italic; margin-bottom: 40px; border-bottom: 1px double #d4b483; padding-bottom: 20px; }
-  .category-highlight { color: #d35400; text-transform: uppercase; font-weight: bold; }
+  .post-title { font-size: 2.5em; color: #4a3728; text-align: center; }
+  .post-meta { text-align: center; color: #8c7b70; font-style: italic; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+  .cat { color: #d35400; font-weight: bold; text-transform: uppercase; }
 
-  .post-body-content { line-height: 1.9; color: #2c3e50; font-size: 1.15em; text-align: justify; }
+  .post-content { line-height: 1.8; color: #2c3e50; font-size: 1.1em; text-align: justify; }
+  .post-content p { margin-bottom: 1.5em; }
   
-  /* Yazı içindeki paragraflar arası boşluk sağlama */
-  .post-body-content p { margin-bottom: 1.8em; }
-  .post-body-content h3 { margin-top: 2em; color: #8b4513; }
-  
-  /* Resimlerin düzgün ve çerçeveli görünmesi */
-  .post-body-content img {
+  .post-content img {
     max-width: 100%;
     height: auto;
     border-radius: 15px;
     display: block;
-    margin: 30px auto;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin: 20px auto;
     border: 8px solid white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
 </style>
