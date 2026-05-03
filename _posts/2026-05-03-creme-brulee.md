@@ -6,7 +6,7 @@ category: Recipe
 thumbnail: "https://images.unsplash.com/photo-1470333732907-3f2824424a63?q=80&w=800"
 ---
 
-![Creme Brulee](https://images.unsplash.com/photo-1470333732907-3f2824424a63?q=80&w=800)
+![Creme Brulee](/site/https://images.unsplash.com/photo-1470333732907-3f2824424a63?q=80&w=800)
 
 Few desserts capture the essence of culinary art quite like the *Crème Brûlée*. It is a masterpiece of contrasts: the cold, velvet-like custard hidden beneath a scorching, glass-like layer of caramelized sugar. To eat a Crème Brûlée is to engage in a ritual of sound and taste.
 
