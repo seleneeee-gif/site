@@ -5,26 +5,66 @@ layout: default
 <html>
 <head>
     <style>
-        .header { text-align: center; padding: 50px 0; }
-        .post-list { list-style: none; padding: 0; max-width: 600px; margin: 0 auto; }
-        .post-card { background: white; margin: 15px 0; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: 0.3s; border-left: 5px solid #f5a623; }
-        .post-card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
-        .post-link { color: #333; text-decoration: none; font-size: 1.4em; font-weight: bold; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .header { text-align: center; margin-bottom: 60px; }
+        .header h1 { font-family: 'Georgia', serif; font-size: 3em; color: #2c3e50; margin-bottom: 10px; }
+        .header p { font-style: italic; color: #7f8c8d; }
+        
+        .post-list { list-style: none; padding: 0; }
+        .post-card { 
+            background: white; 
+            margin-bottom: 30px; 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05); 
+            transition: 0.3s;
+            border-top: 5px solid #f5a623; /* Varsayılan renk */
+        }
+        /* Sanat/Öğretici yazılar için farklı renk */
+        .post-card.art { border-top-color: #3498db; } 
+        
+        .post-card:hover { transform: translateY(-5px); }
+        .category-tag { 
+            display: inline-block; 
+            padding: 5px 12px; 
+            border-radius: 20px; 
+            font-size: 0.75em; 
+            text-transform: uppercase; 
+            font-weight: bold; 
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        .tag-recipe { background: #fff3e0; color: #e67e22; }
+        .tag-art { background: #e1f5fe; color: #2980b9; }
+
+        .post-link { color: #2c3e50; text-decoration: none; font-size: 1.6em; font-family: 'Georgia', serif; font-weight: bold; }
+        .post-date { color: #bdc3c7; margin-top: 10px; font-size: 0.85em; }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>🍰 My Sweet Articles</h1>
-        <p>Recipes&Articles.</p>
-    </div>
+    <div class="container">
+        <div class="header">
+            <h1>🍰 My Sweet Articles</h1>
+            <p>Zihninizi ve damağınızı besleyen tatlı dokunuşlar.</p>
+        </div>
 
-    <ul class="post-list">
-        {% for post in site.posts %}
-        <li class="post-card">
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            <div style="color: #999; margin-top: 5px;">{{ post.date | date: "%d.%m.%Y" }}</div>
-        </li>
-        {% endfor %}
-    </ul>
+        <ul class="post-list">
+            {% for post in site.posts %}
+            <li>
+                <div class="post-card {% if post.category == 'Art' %}art{% endif %}">
+                    {% if post.category == 'Art' %}
+                        <span class="category-tag tag-art">Sanat & Kültür</span>
+                    {% else %}
+                        <span class="category-tag tag-recipe">Tatlı Tarifi</span>
+                    {% endif %}
+                    
+                    <br>
+                    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    <div class="post-date">{{ post.date | date: "%d %B %Y" }}</div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </body>
 </html>
