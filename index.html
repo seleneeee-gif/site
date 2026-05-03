@@ -5,102 +5,64 @@ layout: default
 <html>
 <head>
 <style>
-body { 
-    margin: 0;
-    padding: 0;
-    font-family: 'Georgia', serif;
-    min-height: 100vh;
-    background-color: #fdf5e6;
-    /* Resim yolu hatasını önlemek için doğrudan ismi kullanıyoruz */
-    background-image: url('1777838696064.png');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
+    body { 
+        margin: 0;
+        padding: 0;
+        font-family: 'Georgia', serif;
+        min-height: 100vh;
+        background-color: #fdf5e6;
+        /* Resim yolu hatasını önlemek için baseurl ekledik */
+        background-image: url('{{ site.baseurl }}/1777838696064.png');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
 
-.page-container { 
-    max-width: 900px; 
-    margin: 0 auto; 
-    padding: 60px 20px; 
-    position: relative; 
-    z-index: 1; 
-}
+    .page-container { max-width: 900px; margin: 0 auto; padding: 60px 20px; position: relative; z-index: 1; }
 
-.site-header { 
-    text-align: center; 
-    margin-bottom: 60px; 
-    padding: 50px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 40px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
+    .site-header { 
+        text-align: center; 
+        margin-bottom: 60px; 
+        padding: 50px;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 40px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
 
-.site-header h1 { font-size: 3.5em; color: #4a3728; margin: 0; font-weight: bold; }
-.site-header p { font-style: italic; color: #6d5b4e; margin-top: 10px; font-size: 1.2em; }
+    .site-header h1 { font-size: 3.5em; color: #4a3728; margin: 0; font-weight: bold; }
+    .site-header p { font-style: italic; color: #6d5b4e; margin-top: 10px; font-size: 1.2em; }
 
-.post-list { list-style: none; padding: 0; }
+    .post-list { list-style: none; padding: 0; }
+    .post-card { 
+        background: rgba(255, 255, 255, 0.92); 
+        margin-bottom: 50px; 
+        border-radius: 25px; 
+        box-shadow: 0 15px 35px rgba(0,0,0,0.08); 
+        display: flex; 
+        overflow: hidden; 
+        height: 250px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        transition: 0.3s;
+    }
+    .post-card:hover { transform: translateY(-10px); }
+    .post-thumbnail { width: 300px; height: 100%; object-fit: cover; border-right: 1px solid #eee; }
+    .post-content { padding: 30px; display: flex; flex-direction: column; justify-content: center; flex-grow: 1; }
 
-.post-card { 
-    background: rgba(255, 255, 255, 0.92); 
-    margin-bottom: 40px; 
-    border-radius: 25px; 
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08); 
-    display: flex; 
-    overflow: hidden; 
-    height: 250px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    transition: transform 0.3s ease;
-}
+    .category-tag { display: inline-block; padding: 5px 15px; border-radius: 20px; font-size: 0.7em; text-transform: uppercase; font-weight: bold; margin-bottom: 10px; }
+    .tag-art { background: #f4ecf7; color: #8e44ad; }
+    .tag-recipe { background: #fff5e6; color: #d35400; }
 
-.post-card:hover { transform: translateY(-10px); }
-
-.post-thumbnail { 
-    width: 300px; 
-    height: 100%; 
-    object-fit: cover; 
-    border-right: 1px solid #eee;
-}
-
-.post-content { 
-    padding: 30px; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    flex-grow: 1; 
-}
-
-.category-tag { 
-    display: inline-block; 
-    padding: 5px 15px; 
-    border-radius: 20px; 
-    font-size: 0.7em; 
-    text-transform: uppercase; 
-    font-weight: bold; 
-    margin-bottom: 10px;
-}
-
-.tag-art { background: #f4ecf7; color: #8e44ad; }
-.tag-recipe { background: #fff5e6; color: #d35400; }
-
-.post-link { 
-    color: #2c3e50; 
-    text-decoration: none; 
-    font-size: 1.7em; 
-    font-weight: bold; 
-    line-height: 1.2; 
-}
-
-.post-date { color: #999; margin-top: 10px; font-style: italic; }
+    .post-link { color: #2c3e50; text-decoration: none; font-size: 1.7em; font-weight: bold; }
+    .post-date { color: #999; margin-top: 10px; font-style: italic; }
 </style>
 </head>
 <body>
     <div class="page-container">
         <header class="site-header">
             <h1>📜 My Sweet Articles</h1>
-            <p>Sanatın Zarafeti & Tatlıların Büyüsü</p>
+            <p>A Journey Through Art and Flavors</p>
         </header>
 
         <ul class="post-list">
@@ -110,7 +72,7 @@ body {
                     <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="post-thumbnail">
                     <div class="post-content">
                         <span class="category-tag {% if post.category == 'Art' %}tag-art{% else %}tag-recipe{% endif %}">
-                            {% if post.category == 'Art' %}🎨 Sanat & Kültür{% else %}🍮 Tatlı Tarifi{% endif %}
+                            {% if post.category == 'Art' %}🎨 Art & Culture{% else %}🍮 Sweet Recipe{% endif %}
                         </span>
                         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
                         <span class="post-date">{{ post.date | date: "%d %B %Y" }}</span>
