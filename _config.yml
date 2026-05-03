@@ -1,3 +1,48 @@
-title: "Tatlı Makalelerim"
-description: "En özel tarifler ve mutfak sırları"
-remote_theme: jekyll/minima
+# Site Ayarları
+title: My Sweet Articles
+email: your-email@example.com
+description: >-
+  A journey through the elegance of art and the sweetness of classic recipes.
+  Exploring the aesthetics of history and the art of pastry.
+
+# URL Ayarları (Çok Kritik!)
+# Eğer siten 'kullaniciadi.github.io' şeklindeyse baseurl boş kalsın: ""
+# Eğer siten bir alt klasördeyse '/site-adi' şeklinde yazmalısın.
+baseurl: "" 
+url: "https://yourusername.github.io" # Buraya kendi kullanıcı adını yazabilirsin.
+
+# Yazarlar ve Sosyal Medya
+author:
+  name: Your Name
+  twitter: username
+
+# Dosya İşleme Ayarları
+# GitHub'ın resmini (1777838696064.png) kesin görmesi için buraya ekledik:
+include:
+  - 1777838696064.png
+  - _posts
+  - _layouts
+  - assets
+
+# Markdown ve Stil Ayarları
+markdown: kramdown
+highlighter: rouge
+lsi: false
+
+# Kategorileri ve Tarihleri Düzgün Göstermek İçin
+permalink: /:categories/:year/:month/:day/:title/
+
+# Eklentiler
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Gereksiz dosyaları hariç tut
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
