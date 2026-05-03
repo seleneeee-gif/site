@@ -2,19 +2,21 @@
 layout: default
 ---
 <div style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
-  <header style="text-align: center; margin-bottom: 40px; background: rgba(255,255,255,0.4); padding: 20px; border-radius: 20px;">
+  <header style="text-align: center; background: rgba(255,255,255,0.4); padding: 30px; border-radius: 20px; margin-bottom: 40px;">
     <h1>📜 My Sweet Articles</h1>
     <p>Art, History & Classic Flavours</p>
   </header>
 
-  {% for post in site.posts %}
-  <div style="background: white; margin-bottom: 20px; border-radius: 15px; display: flex; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-    <img src="{{ post.thumbnail }}" style="width: 200px; object-fit: cover;">
-    <div style="padding: 20px;">
-      <span style="color: #d35400; font-weight: bold; font-size: 0.8em;">{{ post.category }}</span><br>
-      <a href="{{ post.url | relative_url }}" style="color: #2c3e50; text-decoration: none; font-size: 1.3em; font-weight: bold;">{{ post.title }}</a>
-      <p style="color: #888; font-size: 0.8em;">{{ post.date | date: "%B %d, %Y" }}</p>
+  <div style="display: flex; flex-direction: column; gap: 25px;">
+    {% for post in site.posts %}
+    <div style="background: rgba(255,255,255,0.9); border-radius: 15px; display: flex; overflow: hidden; height: 180px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+      <img src="{{ post.thumbnail | relative_url }}" style="width: 220px; object-fit: cover;">
+      <div style="padding: 20px;">
+        <span style="color: #d35400; font-weight: bold; font-size: 0.8em;">{{ post.category }}</span><br>
+        <a href="{{ post.url | relative_url }}" style="color: #2c3e50; text-decoration: none; font-size: 1.3em; font-weight: bold;">{{ post.title }}</a>
+        <p style="color: #888; font-size: 0.8em;">{{ post.date | date: "%B %d, %Y" }}</p>
+      </div>
     </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
