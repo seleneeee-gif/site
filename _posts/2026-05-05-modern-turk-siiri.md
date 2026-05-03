@@ -13,7 +13,7 @@ category: Art
     <p style="margin-bottom: 25px;">İkinci Yeni şairleri (Turgut Uyar, Edip Cansever, Cemal Süreya ve nicesi), şiirin sadece "anlaşılmak" için olmadığını savundular. Onlara göre şiir, duyulmak ve hissedilmek içindi. Dilin sınırlarını zorladılar, yeni kelimeler türettiler ve imgelem dünyasını genişlettiler.</p>
 
     <blockquote style="margin: 30px 0; padding: 20px 30px; border-left: 5px solid #bdc3c7; background-color: #f8f9fa; font-style: italic; font-size: 1.1em; color: #555; border-radius: 5px;">
-        "Sizin hiç babanız öldü mü? / Benim bir kere öldü kör oldum..."<br>
+        "Sizin hiç babanız öldü mü? / Benim bir kere öldü, kör oldum..."<br>
         <span style="font-style: normal; font-weight: bold; color: #2c3e50; display: block; margin-top: 10px;">— Cemal Süreya</span>
     </blockquote>
 
