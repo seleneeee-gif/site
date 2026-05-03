@@ -1,22 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { 
-      margin: 0; 
-      padding: 0;
-      background-image: url('{{ site.baseurl }}/1777838696064.png');
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      font-family: 'Georgia', serif;
-    }
-  </style>
-</head>
-<body>
-  {{ content }}
-</body>
-</html>
+---
+layout: default
+---
+<div style="max-width: 800px; margin: 40px auto; padding: 40px; background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(15px); border-radius: 35px; border: 1px solid rgba(255,255,255,0.4); box-shadow: 0 20px 50px rgba(0,0,0,0.1);">
+  <h1 style="font-size: 2.8em; color: #4a3728; text-align: center; margin-bottom: 10px;">{{ page.title }}</h1>
+  <p style="text-align: center; color: #8c7b70; font-style: italic; margin-bottom: 30px; border-bottom: 1px double #d4b483; padding-bottom: 20px;">
+    📅 {{ page.date | date: "%B %d, %Y" }} • <span style="color: #d35400; font-weight: bold;">{{ page.category }}</span>
+  </p>
+  <div style="line-height: 1.9; color: #2c3e50; font-size: 1.15em; text-align: justify;">
+    {{ content }}
+  </div>
+</div>
