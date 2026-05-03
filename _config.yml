@@ -1,7 +1,8 @@
 title: My Sweet Articles
 description: A journey through art and flavors.
 
-baseurl: "/site"
+baseurl: ""
 url: "https://seleneeee-gif.github.io"
 
-include: [1777838696064.png]
+include:
+  - 1777838696064.png
